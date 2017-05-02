@@ -50,14 +50,12 @@ body
 			list-style-type: none
 
 			li
-				position: relative
 				padding-left: 15px
 				font-size: 1em
 				text-shadow: 1px 0px 0px rgba(106, 106, 106, 0.6)
 				color: dimgray
 				height: 40px
 				line-height: 40px
-				+transition(all, 400ms)
 
 				&:nth-child(odd)
 					background-color: white
@@ -66,16 +64,19 @@ body
 					background-color: #f6f6f6
 
 				&:hover
-					padding-left: 60px
 					span
-						left: 0
+						margin-left: -15px
+						visibility: visible
+						opacity: 1
 
 				span
 					+size(40px)
+					visibility: hidden
+					opacity: 0
 					line-height: inherit
 					background-color: #ed5145
 					color: white
 					text-align: center
-					position: absolute
-					left: -40px
-					+transition(all, 400ms)
+					margin-left: -55px
+					margin-right: 15px
+					+transition(all, 300ms)
