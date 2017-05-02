@@ -52,6 +52,9 @@ body {
           margin-left: -15px;
           visibility: visible;
           opacity: 1; }
+        body .todo-block .todos li.strike {
+          text-decoration: line-through;
+          color: #858585; }
         body .todo-block .todos li span {
           height: 40px;
           width: 40px;
