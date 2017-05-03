@@ -1,6 +1,6 @@
 $(document).ready(function($) {
-	
-	$("li, .delete-btn").on("click", function(){
+
+	$(".todos").delegate("li, .delete-btn", "click", function(){
 
 		//delete
 		if ($(this).hasClass('delete-btn')){
@@ -15,6 +15,22 @@ $(document).ready(function($) {
 		else{
 			$(this).toggleClass('strike');
 		}
+
+	});
+
+	$("#addNew").on("keypress", function(event){
+		if(event.which === 13){
+
+			$newItem = $(this).val();
+			$(".todos").append('<li><span class="fa fa-trash-o delete-btn" aria-hidden="true"></span>' + $newItem + '</li>');
+			$(this).val("");
+
+		}
+	});
+
+	$(".addNewDisplay").on("click", function(){
+
+		$("#addNew").slideToggle();
 
 	});
 

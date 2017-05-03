@@ -33,8 +33,9 @@ body
 
 
 		#addNew
+			color: #2b89d3
 			width: 100%
-			border: none
+			border: 3px solid #f6f6f6
 			outline: none
 			background-color: #f6f6f6
 			padding: 15px 0px 15px 15px
@@ -45,6 +46,10 @@ body
 
 			&::placeholder
 				color: #9b9b9b
+
+			&:focus
+				border: 3px solid #4290c7
+				outline-offset: 0
 
 		.todos
 			list-style-type: none

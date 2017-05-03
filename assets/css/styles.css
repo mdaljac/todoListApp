@@ -25,8 +25,9 @@ body {
         margin-right: 20px;
         cursor: pointer; }
     body .todo-block #addNew {
+      color: #2b89d3;
       width: 100%;
-      border: none;
+      border: 3px solid #f6f6f6;
       outline: none;
       background-color: #f6f6f6;
       padding: 15px 0px 15px 15px;
@@ -35,6 +36,9 @@ body {
       font-weight: 600; }
       body .todo-block #addNew::placeholder {
         color: #9b9b9b; }
+      body .todo-block #addNew:focus {
+        border: 3px solid #4290c7;
+        outline-offset: 0; }
     body .todo-block .todos {
       list-style-type: none; }
       body .todo-block .todos li {
