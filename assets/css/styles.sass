@@ -56,7 +56,7 @@ body
 			list-style-type: none
 
 			li
-				padding-left: 15px
+				//padding-left: 15px
 				font-size: 1em
 				text-shadow: 1px 0px 0px rgba(106, 106, 106, 0.6)
 				color: dimgray
@@ -71,9 +71,8 @@ body
 
 				&:hover
 					span
-						margin-left: -15px
-						visibility: visible
 						opacity: 1
+						width: 40px
 
 				&.strike
 					text-decoration: line-through
@@ -81,12 +80,11 @@ body
 
 				span
 					+size(40px)
-					visibility: hidden
 					opacity: 0
+					width: 0
 					line-height: inherit
 					background-color: #ed5145
 					color: white
 					text-align: center
-					margin-left: -55px
 					margin-right: 15px
 					+transition(all, 300ms)
