@@ -30,7 +30,7 @@ $(document).ready(function($) {
 
 	$(".addNewDisplay").on("click", function(){
 
-		$("#addNew").slideToggle();
+		$("#addNew").fadeToggle();
 
 	});
 

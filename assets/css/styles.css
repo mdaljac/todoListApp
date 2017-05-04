@@ -8,7 +8,8 @@ body {
   body .todo-block {
     max-width: 400px;
     margin: 100px auto 0px auto;
-    box-shadow: 0px 2px 5px rgba(106, 106, 106, 0.8); }
+    box-shadow: 0px 2px 5px rgba(106, 106, 106, 0.8);
+    background-color: #f6f6f6; }
     body .todo-block h3 {
       text-transform: uppercase;
       background-color: #2576b1;
